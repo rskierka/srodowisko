@@ -60,7 +60,7 @@ main () {
 }
 ```
 
-Zadanie 6. Program wyliczający sumę.
+Zadanie 6. Program wyliczający coś tam.
 ```c
 main() {
   int n,suma;
