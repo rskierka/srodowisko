@@ -124,4 +124,20 @@ main () {
   
 }
 ```
+Zadanie 10. Napisz program, ktory wczyta liczbe calkowita i wypisze czy jest dodatnia, ujemna czy rowna 0.
+```c
+main () {
+  int i;
+  printf("Podaj liczbe calkowita\n");
+  scanf("%i", &i);
+  if (i>0)
+    printf("Twoja liczba jest dodatnia\n");
+  else if (i<0)
+ printf("Twoja liczba jest ujemna\n");
+  else 
+    printf("Twoja liczba jest rowna zero\n");
+  }
+```
+Zadanie 11. Napisz program, ktory wczyta liczbe calkowita i wypisze czy jest parzysta czy nieparzysta.
+```c
 
