@@ -217,4 +217,31 @@ main () {
   }
 }
 ```
+Zadanie 16. Napisz program ktory wczyta od uzytkownia dane do piecioelementowej tablicy liczb calkowitych, a nastepnie 
+wypisze na ekran sume jej elementow.
+```c
+main () {
+  int i,j,suma;
+  //nadawanie poczatkowej wartosci zmiennej suma
+  suma=0;
+  //wczytywanie ilosci liczb
+  printf("Podaj liczbe\n");
+  scanf("%i", &j);
+  //deklaracja tablicy
+  int tab[j];
+  //wczytywanie liczb do tablicy
+  for (i=0 ; i<j ; i++)
+    scanf("%i", &tab[i]);
+  //wyliczanie wartosci sumy
+  for (i=0; i<j; i++){
+    /* printf("%i\n", tab[i]);*/
+  suma=suma+tab[i];
+  }
+  //wyswietlanie wyniku
+  printf("Wynik to %i \n ", suma);
+}
+```
+Zadanie 17. Napisz program ktory wczyta od uzytkownika dane do piecioelementowej tablicy liczb calkowitych, a nastepnie
+przestawu jej pierwszy element z ostatnim i wypisze cala tablice na ekran.
+```c
 
