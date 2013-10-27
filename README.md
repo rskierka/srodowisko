@@ -264,4 +264,7 @@ main () {
 
 }
 ```
+Zadanie 18.Napisz program ktory zadeklaruje dwie piecioelementowe tablice liczb calkowitych, wczyta dane do pierwszej
+z tabel, a nastepnie przekopiuje dane do drugiej i wypisze na ekran zawartosc drugiej tabeli.
+```c
 
