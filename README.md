@@ -199,4 +199,22 @@ Kol1.     Kol2.     Kol3.
 Mozna zakladac, ze liczby naleza do przedzialu (-100; 100)
 (Zeby wydrukowal l. rzeczywiste na polu o dl 6 znakow z 2 cyframi po kropce nalezy w komendzie printf uzyc formatu
 "%6.2lf)
+```c
+main () {
+  int n,i;
+  printf("Podaj n\n"); 
+  scanf("%i\n", &n);
+  /*deklarowanie tablicy*/
+  double tab[n];
+  /*petla wczytujaca dane do tablicy*/
+  for (i=0 ; i<n ; i++)
+    scanf("%lf\n", &tab[i]);
+  /*petla wypisujaca dane z tablcy*/
+  for (i=0 ; i<n ; i++) {
+    printf("%2.2lf\n", tab[i]);
+    if (i%3==2)
+      printf("\n");
+  }
+}
+```
 
