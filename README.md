@@ -140,4 +140,14 @@ main () {
 ```
 Zadanie 11. Napisz program, ktory wczyta liczbe calkowita i wypisze czy jest parzysta czy nieparzysta.
 ```c
+main () {
+  int i;
+  printf("Podaj liczbe calkowita:\n");
+  scanf("%i", &i);
+  if (i%2)
+    printf("Twoja liczba jest nieparzysta\n");
+  else printf("Twoja liczba jest parzysta\n");
+}
+```
+Zadanie 12. Napisz program, ktory wczyta dwie liczby calkowite i wypisze czy sa rowne.
 
