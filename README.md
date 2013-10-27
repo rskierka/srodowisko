@@ -244,4 +244,24 @@ main () {
 Zadanie 17. Napisz program ktory wczyta od uzytkownika dane do piecioelementowej tablicy liczb calkowitych, a nastepnie
 przestawu jej pierwszy element z ostatnim i wypisze cala tablice na ekran.
 ```c
+main () {
+  int i, j, tmp;
+  //wczytywanie liczby elementow tablicy
+  printf("Podaj liczbe calkowita: \n");
+  scanf("%i", &j);
+  //deklaracja tablicy
+  int tab[j];
+  //wczytywanie danych do tablicy
+  for(i=0; i<j; i++)
+    scanf("%i", &tab[i]);
+  //zamiana pierwszego i piatego elementu tablicy
+  tmp=tab[0];
+  tab[0]=tab[4];
+  tab[4]=tmp;
+  //drukowanie elementow tablicy
+  for(i=0; i<j; i++)
+    printf("%i \n", tab[i]);
+
+}
+```
 
