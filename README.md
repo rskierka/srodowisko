@@ -150,4 +150,19 @@ main () {
 }
 ```
 Zadanie 12. Napisz program, ktory wczyta dwie liczby calkowite i wypisze czy sa rowne.
+```c
+main () {
+  int i,j;
+  printf("Podaj pierwsza liczbe\n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe\n");
+  scanf("%i", &j);
+  if (i==j)
+    printf("Twoje liczby sa rowne\n");
+  else 
+    printf("Twoje liczby nie sa rowne\n");
+}
+```
+Zadanie 13. Napisz program, ktory wczyta 2 liczby calkowite i wypisze ktora z nich jest wieksza.
+```c
 
