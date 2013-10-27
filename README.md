@@ -165,4 +165,38 @@ main () {
 ```
 Zadanie 13. Napisz program, ktory wczyta 2 liczby calkowite i wypisze ktora z nich jest wieksza.
 ```c
+main () {
+  int i,j;
+  printf("Podaj pierwsza liczbe\n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe\n");
+  scanf("%i", &j);
+  if(i>j)
+    printf("Pierwsza liczba jest wieksza od drugiej\n");
+  else
+    printf("Druga liczba jest wieksza od pierwszej\n");
+}
+```
+Zadanie 14. Napisz program, ktory obliczy i wypisze na ekran sume kwadratow liczb od 1 do 20.
+```c
+main () {
+  int suma,i;
+  suma=0;
+  for (i=1; i<=20; i++)
+  suma=suma+i*i;
+  printf("Wynik sumy dwudziestu kwadratow to: %i\n" , suma);
+}
+```
+Zadanie 15. Napisz program, ktory wczytuje liczbe calkowita n>=0, a nastepnie n liczb rzeczywistych (double %lf) i drukuje
+te liczby w trzech kolumnach w taki sposob, zeby zachowac krycie (tzn. kropka dziesietna zawsze byla w tych samych kolumnach)
+Np gdy uzytkownik poda 7  0,12  -31.5 2.5 -59,01
+                      26.4  -12.0 8.3
+                      
+Kol1.     Kol2.     Kol3.
+0,12      -31.50    2.50
+-59.01    26.40     -12.00
+8.30      
+Mozna zakladac, ze liczby naleza do przedzialu (-100; 100)
+(Zeby wydrukowal l. rzeczywiste na polu o dl 6 znakow z 2 cyframi po kropce nalezy w komendzie printf uzyc formatu
+"%6.2lf)
 
