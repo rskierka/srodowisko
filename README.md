@@ -289,4 +289,33 @@ main () {
     }
 } 
 ```
-
+Zadanie 19. Napisz program wczytujacy dwie tablice liczb rzeczywistych (double) tej samej dlugosci i drukujacy ich iloczyn skalarny.
+```c
+main () {
+  int i,j,a,sk;
+  sk=0;
+  printf("Podaj dlugosc tablic \n");
+  scanf("%i", &a);
+  //deklarowanie  tablic
+  double tab[a],tablica[a];
+  //petla wczytujaca dane do tablicy 1
+  printf("Podaj dane do 1 tablicy\n");
+  for (i=0; i<a; i++)
+    scanf("%lf", &tab[i]);
+  //petla wypisujaca dane z 1 tablicy
+  printf("Dane z pierwszej tablicy\n");
+  for (i=0; i<a; i++)
+    printf(" %2.0lf\n", tab[i]);
+  //petla wczytujaca dane do tablicy 2
+  printf("Podaj dane do 2 tablicy\n");
+  for (i=0; i<a; i++)
+    scanf("%lf", &tablica[i]);
+  //petla wypisujaca dane z 2 tablicy
+  printf("Dane z drugiej tablicy\n");
+  for (i=0 ; i<a; i++)
+    printf("%2.0lf\n", tablica[i]);
+  for (i=0 ; i<a; i++)
+    sk=sk+tab[i]*tablica[i];
+  printf("Wynik iloczynu skalarnego to %i\n", sk);
+}
+```
