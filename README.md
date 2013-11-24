@@ -349,3 +349,22 @@ main ()
    }
    }
    ```
+   
+Zadanie 21. Napisać funkcję, która przyjmuje 1 argument typu int N, a następnie wyświetla "Dzień dobry" N razy.   
+```c
+int ile_razy(int n)
+{
+  scanf("%d", &n);
+  return n;
+}
+main()
+{
+  int i,n;
+  printf("Podaj n\n");
+  n=ile_razy(n);
+  for (i=0; i<n; i++)
+    {
+      printf("Dzien dobry\n");
+    }
+}
+```
