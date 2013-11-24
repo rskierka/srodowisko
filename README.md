@@ -346,9 +346,12 @@ main ()
    case 3: printf("Twoja liczba to %i\n" ,F);
      break;
    case 4: return 0;
-   }
-   }
-   ```
+   break;
+   default: printf("Nieznany wybor sprobuj ponownie\n");
+   break;
+}
+}
+```
    
 Zadanie 21. Napisać funkcję, która przyjmuje 1 argument typu int N, a następnie wyświetla "Dzień dobry" N razy.   
 ```c
