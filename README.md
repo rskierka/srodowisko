@@ -371,3 +371,16 @@ main()
     }
 }
 ```
+22. Zadanie ze wskaźnikami.
+
+```c
+main () {
+  int t[4]={10,20,30,40};
+  int *ad[4];
+  int i;
+  for (i=0; i<4; i++) ad[i]=t+i; /*1*/ //wartosc 10
+  for (i=0; i<4; i++) printf("%d\n",*ad[i]); /*2*/ //wartosc 20
+  printf("\n");
+  printf("%d %d\n", *(ad[1]+1), *ad[1]+1); /*3*/ // wartosc 20+1 ze wskaznika
+}
+```
