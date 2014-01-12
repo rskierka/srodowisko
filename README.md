@@ -371,16 +371,35 @@ main()
     }
 }
 ```
-22. Zadanie ze wskaźnikami.
-
+WSKAZNIKI
+Zadanie 22. Przeanalizowac
 ```c
 main () {
-  int t[4]={10,20,30,40};
+  int t[4]={10,20,30,40}; //deklaracja wskaznika do wartosci
   int *ad[4];
   int i;
-  for (i=0; i<4; i++) ad[i]=t+i; /*1*/ //wartosc 10
-  for (i=0; i<4; i++) printf("%d\n",*ad[i]); /*2*/ //wartosc 20
+  for (i=0; i<4; i++) ad[i]=t+i; //przypisanie do tablicy ad[4] wartosci z tablicy t[4]
+  for (i=0; i<4; i++) printf("%d\n",*ad[i]); // wypisanie tablicy ad[i]
   printf("\n");
-  printf("%d %d\n", *(ad[1]+1), *ad[1]+1); /*3*/ // wartosc 20+1 ze wskaznika
+  printf("%d %d\n", *(ad[1]+1), *ad[1]+1); //wypisanie wartosci, ktora znajduje sie pod: *(ad[1]*1), czyli ad[2] ->30, oraz wypisanie wartosci z *ad[1]+1->20+1=21
 }
 ```
+Zadanie 23. 2. Jaka jest wartość *wsk oraz *(wsk+2) w każdym przypadku:
+(a)
+int *wsk;
+int tab[2][2] = {{12, 14}, {16};
+wsk = tab[0];
+(b)
+int *wsk;
+int tab[2][2] = { {12}, {14, 16} };
+wsk = tab[0];
+```c
+main () {
+  int *wsk;
+  int tab[2][2] = {{12, 14}, {16}};
+		   wsk=tab[0];
+		   printf("%d %d \n", *(wsk+1), *(wsk+3));
+  }
+```
+
+Zadanie 24.
